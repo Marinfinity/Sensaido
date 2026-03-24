@@ -20,25 +20,27 @@
 
 <body>
     <header>
-        <div class="nombre" onclick="location.href = 'index.html';">
-            <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px" class="img-nombre"
-                onclick="location.href='./index.html'">
-        </div>
+        <section class="header-name">
+            <div class="nombre" onclick="location.href = 'index.html';">
+                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px" class="img-nombre"
+                    onclick="location.href='index.html'">
+            </div>
+        </section>
+        <section class="index">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu-list">
+                <li><a href="SobreMí.html">Sobre mí</a></li>
+                <li class="separador">|</li>
+                <li><a href="coaching.html">Coaching</a></li>
+                <li class="separador">|</li>
+                <li><a href="talleres.html">Talleres y Conferencias</a></li>
+                <li class="separador">|</li>
+                <li><a href="libros.html">Libros</a></li>
+                <li class="separador">|</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </section>
     </header>
-    <section class="index">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul id="menu-list">
-            <li><a href="SobreMí.html">Sobre mí</a></li>
-            <li class="separador">|</li>
-            <li><a href="coaching.html">Coaching</a></li>
-            <li class="separador">|</li>
-            <li><a href="talleres.html">Talleres y Conferencias</a></li>
-            <li class="separador">|</li>
-            <li><a href="libros.html">Libros</a></li>
-            <li class="separador">|</li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </section>
 
     <section class="intro">
 
