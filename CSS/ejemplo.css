@@ -5,7 +5,7 @@
 }
 
 body {
-   background-color: #F9FBF6;
+   background-color: #e7e9e4;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -23,8 +23,7 @@ body {
    display: flex;
    flex-wrap: wrap;
    position: relative;
-   width: 90%;
-   margin: 0% 5%;
+   width: 100%;
    padding-bottom: 1%;
    color: white;
    background-color: #F9FBF6;
@@ -44,7 +43,6 @@ body {
    width: 100%;
    height: 100%;
    min-height: 100%;
-   border-radius: 40px;
    object-fit: cover;
    z-index: -1;
 }
@@ -139,7 +137,7 @@ body {
 
 .presentation-content {
    display: flex;
-   flex-wrap: wrap;
+
    gap: 5%;
    justify-content: center;
    align-items: center;
@@ -253,11 +251,17 @@ body {
 }
 
 @media (max-width: 768px) {
+   .presentation {
+      overflow-y: hidden;
+      padding-bottom: 30px;
+   }
    .presentation-content {
       flex-direction: column;
       align-items: center;
    }
-
+   .presentation-photo {
+      padding-top: 30px;
+   }
    .presentation-text {
       text-align: center;
       width: 100%;
