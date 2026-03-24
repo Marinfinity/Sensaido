@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="********">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Cabin'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Special+Gothic+Condensed+One'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="CSS/ejemplo.css">
+    <link rel="stylesheet" href="CSS/header-nav-footer.css">
+    <link rel="stylesheet" href="CSS/talleres.css">
+
+    <title>Talleres y Conferencias - Juan José Valero Durán</title>
+</head>
+
+<body>
+    <header>
+        <div class="nombre" onclick="location.href = 'index.html';">
+            <img src=".\Imgs\NombreCasiNegro.png" alt="nombre" width="217px" height="92px" class="img-nombre"
+                onclick="location.href='./index.html'">
+        </div>
+    </header>
+    <section class="index">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu-list">
+            <li><a href="SobreMí.html">Sobre mí</a></li>
+            <li class="separador">|</li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li class="separador">|</li>
+            <li><a href="talleres.html">Talleres y Conferencias</a></li>
+            <li class="separador">|</li>
+            <li><a href="libros.html">Libros</a></li>
+            <li class="separador">|</li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </section>
+
+    <section class="intro">
+
+        <div class="intro-img">
+            <img src="./Imgs/Juanjo Sol.jpg">
+        </div>
+
+        <div class="intro-text">
+            <h1>SPEAKER</h1>
+            <hr>
+            <h2>Conferencias de Formación y Talleres Informativos</h2>
+
+            <p>A lo largo de los años he desarrollado talleres y conferencias diseñados para inspirar, transformar y
+                generar impacto real. Cada encuentro es una oportunidad para compartir herramientas prácticas,
+                experiencias significativas y reflexiones profundas que motivan al crecimiento personal y profesional.
+                Si estás buscando espacios donde impulsar el cambio, despertar nuevas perspectivas y conectar con tu
+                potencial, esta sección es para ti.</p>
+            <div class="contacto-AM"><a href="contacto.html" class="Start-Now">CONTRATACIONES</a></div>
+        </div>
+
+    </section>
+    <section class="ult-conferencias-fondo">
+        <section class="ult-talleres">
+            <div class="lista-intro">
+                <h1>ÚLTIMOS TALLERES Y CONFERENCIAS</h1>
+                <hr>
+                <p>Imparto talleres diseñados para generar un cambio real y duradero en las personas, los equipos y las
+                    organizaciones. Cada encuentro es una experiencia práctica, motivadora y enfocada a la acción, donde
+                    los participantes no solo aprenden herramientas, sino que se llevan una nueva forma de ver y
+                    afrontar la vida o el trabajo.
+
+                </p>
+                <p>Los talleres que facilito están basados en mi formación con referentes internacionales como Lain
+                    García Calvo y John C. Maxwell, combinando coaching, liderazgo consciente, inteligencia emocional y
+                    estrategias de alto rendimiento.</p>
+
+
+            </div>
+            <div class="lista-talleres">
+                <section class="lista">
+                    <ul>
+                        <li>Alcanzar el éxito: Del estrés al éxito.</li>
+                        <li>Define tu IKIGAI: Descubre como llegar a tu libertad emocional, mental y económica.</li>
+                        <li>Domina tu mente y domínalo todo</li>
+                        <li>Bioenergía emocional: cómo afectan tus emociones a tu salud?</li>
+                        <li>Sana tu templo: Controla tu mente y tu vida</li>
+                        <li>Taller de quesos: Conoce el apasionante mundo del queso y aprende a fabricarlo.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="lista-intro">
+                <p>Cada sesión está pensada para inspirar, movilizar y transformar. No se trata solo de adquirir
+                    conocimientos, sino de integrarlos para aplicarlos desde el primer momento.
+                </p>
+                <p>Si estás buscando un taller que realmente impacte, que deje huella y que ayude a tu equipo o
+                    comunidad a dar un paso adelante, estaré encantado de colaborar contigo.</p>
+            </div>
+        </section>
+    </section>
+
+    <section class="container">
+        <div class="section-grande">
+            <video height="550" id="video-element">
+                <source src="./Videos/Entrevista Juanjo .mp4" type="video/mp4">
+            </video>
+
+            <h1>Conoce acerca del alcohol</h1>
+            <p>Entrevista a Juan José Valero</p>
+            <button class="play-button" id="play" onclick="toggleVideo1()">▶</button>
+
+        </div>
+        <div class="section-divided">
+
+            <div class="section-pequeña">
+
+                <video id="video-element-pequeño2" onmouseover="playVideoQueso()" onmouseout="pauseVideoQueso()" muted>
+                    <source src="./Videos/TallerQuesosCorto.mp4" type="video/mp4">
+                </video>
+
+                <h1>Taller Quesos</h1>
+                <p>Conocimientos Gastronómicos</p>
+                <button class="play-button" id="play-2"
+                    onclick="window.location.href = 'https://www.linkedin.com/posts/juan-jose-valero-duran-a48ba528_un-%C3%A9xito-el-segundo-taller-del-queso-celebrado-activity-7317831764981309440--Qs4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFoGmR0BnCnKAl87tSXTBuZtz3i8_TM1vKE';">
+                    ▶</button>
+            </div>
+
+            <div class="section-pequeña">
+                <video id="video-element-pequeño3" onmouseover="playVideoExito()" onmouseout="pauseVideoExito()" muted>
+                    <source src="./Videos/taller exito.mp4" type="video/mp4">
+                </video>
+                <h1>Alcanzar el éxito</h1>
+                <p>Del estrés al éxito.</p>
+                <button class="play-button" id="play-3" onclick="toggleVideo2()">▶</button>
+            </div>
+            <div class="section-pequeña">
+                <video id="video-element-pequeño4" onmouseover="playVideoEntrevista()"
+                    onmouseout="pauseVideoEntrevista()" muted>
+                    <source src="./Videos/Entrevista SENSAIDO.mp4" type="video/mp4">
+                </video>
+                <h1>Sensaido 2017</h1>
+                <p>Jesús Juan Rubio</p>
+                <button class="play-button" id="play-4"
+                    onclick="window.location.href = 'https://www.youtube.com/watch?v=Z8gGXzWiLDQ&list=PLHT6McRsT5lXk1LugabtFMctJtXj53avU&index=6';">▶</button>
+            </div>
+            <div class="section-pequeña">
+                <video id="video-element-pequeño5" onmouseover="playVideoDemo()" onmouseout="pauseVideoDemo()" muted>
+                    <source src="./Videos/SENSAIDO DEMOSTRACIÓN.webm" type="video/webm">
+                </video>
+                <h1>Exhibición</h1>
+                <p>SENSAIDO 2017</p>
+                <button class="play-button" id="play-5"
+                    onclick="window.location.href = 'https://www.youtube.com/watch?v=51A34mhMkts&list=PLHT6McRsT5lXk1LugabtFMctJtXj53avU&index=3';">▶</button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="texto-intro">
+        <h1>Opiniones y Comentarios</h1>
+        <hr>
+        <p>Descubre las experiencias de quienes han asistido a nuestros talleres y conferencias. Sus palabras
+            reflejan el impacto real de cada encuentro, la conexión vivida y el conocimiento compartido.
+
+            ¿Tú también fuiste parte? ¡Déjanos tu opinión!</p>
+    </div>
+
+    <section class="comentarios">
+
+        <div class="comentario">
+
+            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
+
+            <div class="texto">
+                <p>Me siento afortunado de formar parte de este proyecto. Enhorabuena a todos por vuestro esfuerzo ha
+                    sido espectacular</p>
+            </div>
+
+
+            <div class="nombre-comentario">
+
+
+                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
+                <div>
+                    <h1>JUAN MOLINA</h1>
+                    <pre>Participante del taller</pre>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="comentario">
+
+            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
+
+            <div class="texto">
+                <p>Quiero aprovechar esta oportunidad para expresar mi más profundo agradecimiento a Juanjo por
+                    despertar nuevas ideas en las personas, a mí particularmente me hizo recapacitar sobre la
+                    posibilidad de ayudar a nuestros mayores.<br><br> GRACIAS POR SER
+                    AUTÉNTICO</p>
+            </div>
+
+
+            <div class="nombre-comentario">
+
+
+                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
+                <div>
+                    <h1>JESÚS JUAN RUBIO</h1>
+                    <pre>Proceso de Coaching</pre>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="comentario">
+
+            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
+
+            <div class="texto">
+                <p>Excelente guía y prácticas recomendaciones. 
+                ¡De todo corazón! ¡Gracias Juanjo!
+                </p>
+            </div>
+
+
+            <div class="nombre-comentario">
+
+
+                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
+                <div>
+                    <h1>FRANCISCO DELGADO</h1>
+                    <pre>Participante del taller</pre>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="client-section">
+        <h2>Ya Confían en Mí:</h2>
+        <div class="client-logos">
+            <img src="./Imgs/logos/negroemprende.jpg" alt="Madrid Emprende">
+            <img src="./Imgs/logos/URJ_logo_BN_NEG_corona_roja.jpg" alt="URJC">
+            <img src="./Imgs/logos/mentorDat.png" alt="MentorDay">
+            <img src="./Imgs/logos/viveros-empresas.png" alt="Vivero de Empresas">
+            <img src="./Imgs/logos/amcesorg2.png" alt="AMCES">
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imgs\NombreCasiNegro.png" alt="nombre" class="img-nombre">
+            </div>
+            <div class="footer-index">
+                <div class="footer-index"><a href="coaching.html"><i class="fas fa-user-friends"></i> Coaching</a></div>
+                <div class="footer-index"><a href="talleres.html"><i class="fas fa-microphone"></i> Talleres y
+                        Conferencias</a></div>
+                <div class="footer-index"><a href="libros.html"><i class="fas fa-book"></i> Libros</a></div>
+                <div class="footer-index"><a href="contacto.html"><i class="fas fa-phone"></i> Contacto</a></div>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: +34 699 00 82 77</p>
+                <p>info@juanjosevalero.com</p>
+                <a href="https://www.facebook.com/juanjose.valeroduran" target="_blank" rel="noopener"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/duran_juan54065" target="_blank" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@juanjosevaleroduran7477?app=desktop" target="_blank" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/juan-jose-valero-duran-a48ba528/" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin"></i></a>
+                <p id="texto-copyright">© 2025 Juan José Valero Durán. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-legal">
+            <p><a href="aviso-legal.html">Aviso legal</a></p>
+            <p><a href="politica-privacidad.html">Política de privacidad</a></p>
+        </div>
+    </footer>
+</body>
+<script src="./JS/mostrarTexto.js"></script>
+<script src="./JS/slide-in.js"></script>
+<script src="./JS/talleres.js"></script>
+<script src="./JS/cambiar-fecha-copyright.js"></script>
+
+</html>

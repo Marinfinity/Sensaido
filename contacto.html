@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="********">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Cabin'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Special+Gothic+Condensed+One'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/ejemplo.css">
+    <link rel="stylesheet" href="CSS/header-nav-footer.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+
+    <title>Contacto - Juan José Valero Durán</title>
+</head>
+
+<body>
+    <header>
+        <div class="nombre" onclick="location.href = 'index.html';">
+            <img src=".\Imgs\NombreCasiNegro.png" alt="nombre" width="217px" height="92px" class="img-nombre"
+                onclick="location.href='./index.html'">
+        </div>
+    </header>
+    <section class="index">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu-list">
+            <li><a href="SobreMí.html">Sobre mí</a></li>
+            <li class="separador">|</li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li class="separador">|</li>
+            <li><a href="talleres.html">Talleres y Conferencias</a></li>
+            <li class="separador">|</li>
+            <li><a href="libros.html">Libros</a></li>
+            <li class="separador">|</li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </section>
+    <section class="contact-body">
+        <div class="contact-left">
+            <h1 class="title">Contacto</h1>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> info@juanjosevalero.com</p>
+                <p><i class="fas fa-phone"></i> +34 699 00 82 77</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/juanjose.valeroduran" target="_blank" rel="noopener"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/duran_juan54065" target="_blank" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@juanjosevaleroduran7477?app=desktop" target="_blank" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/juan-jose-valero-duran-a48ba528/" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <img src="./Imgs/Juanjo.png" alt="Juan José Valero Durán" width="400px" height="auto"
+                class="img-contact">
+        </div>
+        <div>
+            <form class="contact-form" action="https://formspree.io/f/xdkgqloo" method="POST">
+                <div class="text-style">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required><br>
+
+                    <label for="email">Correo electrónico</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+
+                <div class="tel-style">
+                    <label for="telefono">Teléfono</label><br>
+                    <input type="tel" id="telefono" name="telefono"><br><br>
+                </div>
+
+                <div class="option-style">
+                    <label for="opciones">Opciones múltiples</label><br><br>
+                    <label><input type="radio" name="opciones[]" value="1"> Coaching individualizado</label><br>
+                    <label><input type="radio" name="opciones[]" value="2"> Coaching grupal para empresas</label><br>
+                    <label><input type="radio" name="opciones[]" value="3"> Conferencias</label><br>
+                    <label><input type="radio" name="opciones[]" value="4"> Senior advisor</label><br>
+                    <label><input type="radio" name="opciones[]" value="5"> Otros</label><br>
+                    <br>
+                </div>
+
+                <div class="text-style" id="mensaje-style">
+                    <label for="mensaje">Comentario o mensaje</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <br>
+
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imgs\NombreCasiNegro.png" alt="nombre" class="img-nombre">
+            </div>
+            <div class="footer-index">
+                <div class="footer-index"><a href="coaching.html"><i class="fas fa-user-friends"></i> Coaching</a></div>
+                <div class="footer-index"><a href="talleres.html"><i class="fas fa-microphone"></i> Talleres y
+                        Conferencias</a></div>
+                <div class="footer-index"><a href="libros.html"><i class="fas fa-book"></i> Libros</a></div>
+                <div class="footer-index"><a href="contacto.html"><i class="fas fa-phone"></i> Contacto</a></div>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: +34 699 00 82 77</p>
+                <p>info@juanjosevalero.com</p>
+                <a href="https://www.facebook.com/juanjose.valeroduran" target="_blank" rel="noopener"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/duran_juan54065" target="_blank" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@juanjosevaleroduran7477?app=desktop" target="_blank" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/juan-jose-valero-duran-a48ba528/" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin"></i></a>
+                <p id="texto-copyright">© 2025 Juan José Valero Durán. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-legal">
+            <p><a href="aviso-legal.html">Aviso legal</a></p>
+            <p><a href="politica-privacidad.html">Política de privacidad</a></p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="./JS/mostrarTexto.js"></script>
+<script src="./JS/slide-in.js"></script>
+<script src="./JS/cambiar-fecha-copyright.js"></script>
+
+</html>

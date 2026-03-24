@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="********">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Cabin'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Special+Gothic+Condensed+One'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/ejemplo.css">
+    <link rel="stylesheet" href="CSS/header-nav-footer.css">
+    <link rel="stylesheet" href="CSS/libros.css">
+
+    <title>Libros - Juan José Valero Durán</title>
+</head>
+
+<body>
+    <header>
+        <div class="nombre" onclick="location.href = 'index.html';">
+            <img src=".\Imgs\NombreCasiNegro.png" alt="nombre" width="217px" height="92px" class="img-nombre"
+                onclick="location.href='./index.html'">
+        </div>
+    </header>
+    <section class="index">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu-list">
+            <li><a href="SobreMí.html">Sobre mí</a></li>
+            <li class="separador">|</li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li class="separador">|</li>
+            <li><a href="talleres.html">Talleres y Conferencias</a></li>
+            <li class="separador">|</li>
+            <li><a href="libros.html">Libros</a></li>
+            <li class="separador">|</li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </section>
+
+
+
+    <section class="libros-intro">
+        <h1>MIS LIBROS</h1>
+        <hr>
+        <p>Estos libros son una extensión de mi trabajo y mi pasión: ayudarte a vivir con mayor plenitud, equilibrio y
+            propósito. Te invito a descubrir cada uno.</p>
+
+
+    </section>
+
+
+
+    <section class="libros">
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\BioenergíaEmocional.jpg"></div>
+
+            <h1>Bioenergía Emocional</h1>
+            <p>Mucho más que un libro: es un viaje transformador hacia el entendimiento profundo de cómo nuestras
+                emociones influyen en la salud física</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/Bioenerg%C3%ADa-Emocional-origen-las-enfermedades/dp/1980759472/ref=zg-te-pba_d_sccl_1_1/257-8768758-8519662?pd_rd_w=vFtth&content-id=amzn1.sym.a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_p=a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_r=BHRAWAACNNHVJ6NTN7NP&pd_rd_wg=xstZx&pd_rd_r=c8e1b327-dfa3-4725-ab2a-759f4e7718e3&pd_rd_i=1980759472&psc=1'">Comprar</button>
+            </div>
+            <div>
+                <button id="saberMasBioBtn" class="saber-más" onclick="mostrarMasBio()">Mostrar Más</button>
+                <div id="infoBio" class="infoLibros">
+                    <p>
+                        <strong>Bioenergía Emocional</strong>propone una nueva visión sobre la salud emocional y física,
+                        mostrando cómo las
+                        emociones no resueltas pueden manifestarse como enfermedades. A través de experiencias, casos
+                        prácticos y fundamentos energéticos, el lector es guiado hacia una comprensión más profunda de
+                        sí mismo.
+                    </p>
+                    <p>
+                        Ideal para quienes buscan herramientas de autoconocimiento, crecimiento personal y sanación
+                        integral.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\LaTeoríaDeLas13Llaves.jpg"></div>
+
+            <h1>La Teoría de las 13 Llaves</h1>
+            <p>Un enfoque revolucionario para desbloquear el potencial interior y conseguir todo lo que te propongas a
+                través de las 13 claves esenciales que transformaran tu vida.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/teor%C3%ADa-las-13-llaves-efectiva/dp/1731583796'">Comprar</button>
+            </div>
+            <div>
+                <button id="saberMas13LlavesBtn" class="saber-más" onclick="mostrarMas13Llaves()">Mostrar Más</button>
+                <div id="info13Llaves" class="infoLibros">
+                    <p>
+                        <strong>La Teoría de las 13 Llaves</strong> es una guía práctica y reflexiva que explora
+                        principios clave para
+                        desbloquear el potencial interior, comprender patrones personales y avanzar en el desarrollo
+                        espiritual y emocional.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\SENSAIDO.jpg"></div>
+
+            <h1>SENSAIDO: Envejecimiento activo y saludable</h1>
+            <p>Un enfoque innovador para promover un envejecimiento saludable, combinando movimiento y conciencia para
+                mejorar la calidad de vida en la madurez.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/SENSAIDO-Envejecimiento-activo-y-saludable/dp/1983077569/ref=zg-te-pba_d_sccl_2_2/257-8768758-8519662?pd_rd_w=uWniJ&content-id=amzn1.sym.a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_p=a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_r=CGDQSQRQE8VZPBFT7Y7K&pd_rd_wg=4T1rV&pd_rd_r=38ab85d1-908f-4f15-8c18-fca399f40187&pd_rd_i=1983077569&psc=1' ">Comprar</button>
+            </div>
+            <div>
+                <button id="saberMasSensaidoBtn" class="saber-más" onclick="mostrarMasSensaido()">Mostrar Más</button>
+                <div id="infoSensaido" class="infoLibros">
+                    <p>
+                        <strong>SENSAIDO</strong> es una guía práctica que promueve un envejecimiento activo y saludable
+                        a través de hábitos conscientes, actividad física, nutrición equilibrada y bienestar emocional.
+                    </p>
+                    <p>
+                        Una herramienta valiosa para quienes desean mejorar su calidad de vida en la madurez con
+                        autonomía y vitalidad.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\AquíEstáMiQueso.jpg"></div>
+
+            <h1>AQUÍ ESTÁ MI QUESO: Los 26 quesos más importantes de España</h1>
+            <p>Un recorrido delicioso por los 26 quesos más emblemáticos de España, descubriendo su historia, sabor y la
+                tradición que los hace únicos.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/AQU%C3%8D-EST%C3%81-MI-QUESO-importantes/dp/1977025374' ">Comprar</button>
+            </div>
+            <div>
+                <button id="saberMasQuesoBtn" class="saber-más" onclick="mostrarMasQueso()">Mostrar Más</button>
+                <div id="infoQueso" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>Aquí está mi queso</strong> es una celebración del arte y la cultura del queso en
+                        España, a través de una mirada cercana y apasionada de su autor.
+                    </p>
+                    <p>
+                        Ideal para amantes del queso y curiosos gastronómicos que desean descubrir la historia,
+                        tradición y emociones que se esconden detrás de los 26 quesos más representativos del país.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section class="libros">
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\ElJardínDeLaAlegría.jpg"></div>
+
+            <h1>El Jardín de la alegría: Las 38 flores que curan</h1>
+            <p>Un viaje fascinante a través de las 38 flores curativas del sistema floral de Bach, que nos conecta con
+                la sabiduría de la naturaleza y promueve la armonía emocional.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/El-Jard%C3%ADn-alegr%C3%ADa-flores-curan/dp/1717800521' ">Comprar</button>
+            </div>
+            <div>
+                <button id="jardinBtn" class="saber-más" onclick="mostrarMasJardin()">Mostrar Más</button>
+                <div id="infoJardin" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>El Jardín de la alegría</strong> es una guía práctica sobre la terapia floral de Bach,
+                        enfocada en corregir emociones negativas mediante el uso de las 38 flores que curan. El autor
+                        presenta una herramienta directa y accesible, sin rodeos ni extensas teorías, para facilitar la
+                        aplicación de esta terapia en la vida cotidiana.
+                    </p>
+                    <p>
+                        Ideal para quienes buscan una aproximación sencilla y efectiva al equilibrio emocional, tanto en
+                        adultos como en niños y animales, utilizando remedios naturales y seguros.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\Arredondo.jpg"></div>
+
+            <h1>ARREDONDO: La capital del mundo</h1>
+            <p>Un relato cautivador que nos transporta a Arredondo, donde la magia de lo cotidiano y la la esencia del
+                mundo se entrelazan y fusionan en un solo corazón</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/ARREDONDO-Juan-Jos%C3%A9-Valero-Dur%C3%A1n/dp/1092754970' ">Comprar</button>
+            </div>
+            <div>
+                <button id="arredondoBtn" class="saber-más" onclick="mostrarMasArredondo()">Mostrar Más</button>
+                <div id="infoArredondo" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>ARREDONDO: La capital del mundo</strong> es una obra que invita a descubrir la riqueza
+                        cultural, histórica y emocional del municipio de Arredondo. A través de relatos y reflexiones,
+                        el autor destaca la singularidad de este lugar, considerado por sus habitantes como el corazón
+                        del mundo.
+                    </p>
+                    <p>
+                        Ideal para quienes desean conocer y apreciar la identidad y tradiciones de Arredondo, así como
+                        para aquellos interesados en explorar la conexión profunda entre las personas y su entorno.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src="./Imgs/libros/DecodificandoElFuturoFinanciero.jpg"></div>
+
+            <h1>Decodificando el Futuro Financiero: Un Viaje Profundo a través de las Criptomonedas con la Inteligencia
+                Artificial</h1>
+            <p>Un análisis visionario que desvela el impacto de las criptomonedas y la inteligencia artificial en el
+                futuro financiero, guiándonos hacia nuevas fronteras económicas.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/Decodificando-Futuro-Financiero-Criptomonedas-Inteligencia/dp/B0CPJMV97D/ref=zg-te-pba_d_sccl_1_5/257-8768758-8519662?pd_rd_w=S1Pbv&content-id=amzn1.sym.a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_p=a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_r=K8NW79MJK3ZYVPMCR18R&pd_rd_wg=wd0M5&pd_rd_r=d96969b1-5589-46d9-a963-baadc716edfc&pd_rd_i=B0CPJMV97D&psc=1' ">Comprar</button>
+            </div>
+            <div>
+                <button id="decodificandoBtn" class="saber-más" onclick="mostrarMasDecodificando()">Mostrar Más</button>
+                <div id="infoDecodificando" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>Decodificando el Futuro Financiero</strong> es una guía que explora la evolución y los
+                        desafíos de las criptomonedas, integrando la inteligencia artificial como herramienta clave para
+                        comprender este nuevo paradigma financiero.
+                    </p>
+                    <p>
+                        Ideal para quienes desean adentrarse en el mundo de las finanzas digitales y entender cómo la
+                        tecnología está transformando el panorama económico global.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\MiBoticaNatural.jpg"></div>
+
+            <h1>Mi Botica Natural: Mis plantas medicinales y sus propiedades</h1>
+            <p>Un recorrido íntimo por el mundo de las plantas medicinales, donde descubrirás sus propiedades curativas
+                y cómo pueden transformar tu bienestar.</p>
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/Mi-Botica-Natural-medicinales-propiedades/dp/B087CTSWTK/ref=zg-te-pba_d_sccl_1_8/257-8768758-8519662?pd_rd_w=peEZv&content-id=amzn1.sym.a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_p=a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_r=5YS9554QGF20KEQC4AB0&pd_rd_wg=8g2cQ&pd_rd_r=b4932213-bcd7-4128-bc4b-2f75caae1d06&pd_rd_i=B087CTSWTK&psc=1' ">Comprar</button>
+            </div>
+            <div>
+                <button id="MiboticaBtn" class="saber-más" onclick="mostrarMasMibotica()">Mostrar Más</button>
+                <div id="infoMibotica" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>Mi Botica Natural</strong> es una recopilación de plantas medicinales que el autor, como
+                        naturópata, recomienda y utiliza habitualmente. En esta obra, se detallan sus aplicaciones y
+                        propiedades terapéuticas, ofreciendo una guía práctica para quienes buscan alternativas
+                        naturales para el cuidado de la salud.
+                    </p>
+                    <p>
+                        Ideal para quienes desean contar con un botiquín natural en casa y explorar el uso de remedios
+                        herbales tradicionales de manera sencilla y efectiva.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="libros">
+
+        <div class="libro slide">
+            <div class="img"><img src=".\Imgs\libros\YoTengoUnaPizarraEnMiPuerta.jpg"></div>
+
+            <h1>Yo tengo una pizarra en mi puerta</h1>
+            <p>Una inspiradora recopilación de frases cotidianas que invitan a la reflexión, la gratitud y el cambio
+                personal desde lo simple y lo cercano.</p>
+
+
+            <div class="botones-libros">
+                <button class="comprar"
+                    onclick="location.href = 'https://www.amazon.es/Yo-tengo-una-pizarra-puerta/dp/1973280485/ref=zg-te-pba_d_sccl_1_8/257-8768758-8519662?pd_rd_w=pS79y&content-id=amzn1.sym.a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_p=a3e48913-64f8-4290-b8fb-6cbfec71f208&pf_rd_r=W6NZHSJ0D21YK486C48N&pd_rd_wg=c30xt&pd_rd_r=dd84b20f-2954-4dea-9d5e-46d95a72c1c6&pd_rd_i=1973280485&psc=1' ">Comprar</button>
+            </div>
+            <div>
+                <button id="PizarraBtn" class="saber-más" onclick="mostrarMasPizarra()">Mostrar Más</button>
+                <div id="infoPizarra" class="infoLibros" style="display: none;">
+                    <p>
+                        <strong>Yo tengo una pizarra en mi puerta</strong> es una invitación a la reflexión personal a
+                        través de frases cotidianas escritas en una pizarra. El autor comparte cómo este sencillo hábito
+                        transformó su perspectiva de vida, demostrando que pequeños gestos pueden iniciar grandes
+                        cambios.
+                    </p>
+                    <p>
+                        Ideal para quienes buscan inspiración diaria y desean comenzar un camino hacia el
+                        autoconocimiento y la mejora personal con alegría y sencillez.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imgs\NombreCasiNegro.png" alt="nombre" class="img-nombre">
+            </div>
+            <div class="footer-index">
+                <div class="footer-index"><a href="coaching.html"><i class="fas fa-user-friends"></i> Coaching</a></div>
+                <div class="footer-index"><a href="talleres.html"><i class="fas fa-microphone"></i> Talleres y
+                        Conferencias</a></div>
+                <div class="footer-index"><a href="libros.html"><i class="fas fa-book"></i> Libros</a></div>
+                <div class="footer-index"><a href="contacto.html"><i class="fas fa-phone"></i> Contacto</a></div>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: +34 699 00 82 77</p>
+                <p>info@juanjosevalero.com</p>
+                <a href="https://www.facebook.com/juanjose.valeroduran" target="_blank" rel="noopener"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/duran_juan54065" target="_blank" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@juanjosevaleroduran7477?app=desktop" target="_blank" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/juan-jose-valero-duran-a48ba528/" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin"></i></a>
+                <p id="texto-copyright">© 2025 Juan José Valero Durán. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-legal">
+            <p><a href="aviso-legal.html">Aviso legal</a></p>
+            <p><a href="politica-privacidad.html">Política de privacidad</a></p>
+        </div>
+    </footer>
+    <script src="./JS/mostrarTexto.js"></script>
+    <script src="./JS/slide-in.js"></script>
+    <script src="./JS/cambiar-fecha-copyright.js"></script>
+</body>
+
+</html>
