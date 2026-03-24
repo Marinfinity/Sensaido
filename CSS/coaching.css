@@ -1,0 +1,246 @@
+.coaching-body {
+  position: relative;
+  background-color: white;;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  background: linear-gradient(to bottom, #ffd8d8, #ffffff);
+  padding-bottom: 5%;
+}
+.coaching-title {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0;
+  padding: 60px 0 10px 0;
+  color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+.coaching-body hr {
+  position: relative;
+  width: 0;
+  height: 4px;
+  background-color: #0B4141;
+  border: none;
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+  animation: underline-grow 1s ease-in-out forwards;
+}
+@keyframes underline-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.coaching-symbols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 70px 0 40px 0;
+}
+.coaching-symbol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.coaching-symbols svg,
+.coaching-symbols img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+.coaching-symbols svg:hover,
+.coaching-symbols img:hover {
+  transform: scale(1.1);
+}
+.coaching-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  height: 100%;
+}
+.coaching-executive, 
+.coaching-teams {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.coaching-teams {
+  justify-content: right;
+}
+.executive-title {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+.teams-title {
+display: flex;
+flex-direction: column;
+text-align: right;
+}
+.description-title {
+text-transform: uppercase;
+margin-bottom: 0%;
+font-size: 3em; 
+}
+.description-text {
+text-align: justify;
+margin-top: 10px;
+width: 100%;
+}
+.description-line {
+width: 2px;
+height: 600px;
+background-color: #000;
+align-self: flex-end;
+}
+
+/* Form */
+.coaching-form {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.coaching-form::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../Imgs/presentation.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px); 
+  opacity: 0.5; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  z-index: -1; 
+}   
+.contact-form{
+width: 70%;
+padding-top: 1%;
+padding-bottom: 5%;
+border: solid 1px #ccc;
+border-radius: 8px;
+background-color: white;
+}
+.text-style input,
+.text-style textarea{
+width: 50%;
+padding: 12px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 8px;
+resize: vertical;
+}
+.tel-style{
+color: black;
+}
+.tel-style input,
+.tel-style textarea{
+width: 100%;
+margin: 10px 0;
+line-height: 25px;
+height: 50px;
+border: 1px solid #ccc;
+border-radius: 8px;
+resize: vertical;
+}
+.tel-style label{
+color: black;
+border-style: none;
+}
+.option-style{
+width: 100%;
+margin: 10px 0;
+line-height: 25px;
+resize: vertical; 
+}
+input[type="radio"],
+input[type="checkbox"] {
+transform: scale(1.5); 
+margin-right: 12px;    
+}
+#mensaje-style input,
+#mensaje-style textarea{
+width: 50%;
+}
+.submit {
+background-color: #007BFF;
+color: white;
+padding: 12px 20px; 
+border: none;
+border-radius: 8px;
+cursor: pointer;
+width: 30%;
+font-size: 16px; 
+}
+.submit:hover {
+background-color: #0056b3;
+}
+@media (max-width: 768px) {
+.coaching-description {
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.coaching-executive, 
+.coaching-teams {
+    width: 100vw;
+    margin: 0;
+}
+.description-title,
+.description-subtitle,
+.description-text {
+    width: 100%;
+    text-align: center;
+   
+}
+.description-text p {
+  width: 100%;
+  text-align: center;
+
+ 
+}
+.description-line {
+  display: none;
+}
+.contact-form {
+    width: 80%;
+}
+.coaching-executive, 
+.coaching-teams {
+min-width: 100%;
+}
+.coaching-symbols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 5%;
+}
+}

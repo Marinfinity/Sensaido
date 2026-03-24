@@ -1,0 +1,158 @@
+/* CONTENEDOR GENERAL */
+
+.legal-page{
+background-color: white;
+font-family: 'Cabin', sans-serif;
+padding: 20px;
+margin: 0 auto;
+color:#121212;
+line-height:1.6;
+}
+
+/*CONTENT-WRAPPER*/
+
+.content-wrapper{
+max-width:900px;
+margin:0 auto;
+padding:20px;
+}
+
+/*  HEADER */
+
+.legal-header{
+background-color: transparent;
+text-align: center;
+margin: 20px 0;
+padding: 60px 0 10px 0;
+color: #121212;
+}
+
+.legal-header h1{
+font-size:2em;
+font-weight:bold;
+text-transform:uppercase;
+margin-bottom:10px;
+}
+
+.legal-header p{
+max-width:700px;
+margin:0 auto 10px auto;
+opacity:0.8;
+}
+
+.legal-header hr{
+position:relative;
+width:0;
+height:4px;
+background-color:#0B4141;
+border:none;
+margin:10px auto 20px auto;
+border-radius:2px;
+animation:underline-grow 1s ease-in-out forwards;
+}
+
+@keyframes underline-grow{
+from{width:0;}
+to{width:60%;}
+}
+
+
+
+
+
+/* SECCIONES */
+
+.legal-section{
+margin-bottom:45px;
+}
+
+.legal-section h2{
+font-size:1.5em;
+color:#121212;
+margin-bottom:10px;
+padding-bottom:6px;
+border-bottom:2px solid rgba(0,0,0,0.06);
+}
+
+.legal-section h3{
+font-size:1.15em;
+margin-top:20px;
+margin-bottom:8px;
+color:#333;
+}
+
+.legal-section p{
+margin-bottom:12px;
+}
+
+
+/* LISTAS */
+
+.legal-section ul{
+padding-left:22px;
+margin:10px 0 16px 0;
+}
+
+.legal-section li{
+margin-bottom:6px;
+}
+
+.legal-box li{
+margin-bottom:8px;
+}
+
+.legal-box li:last-child{
+margin-bottom:0;
+}
+
+
+/* CAJAS DE INFORMACIÓN */
+
+.legal-box{
+background:white;
+border:1px solid rgba(0,0,0,0.08);
+border-radius:8px;
+padding:16px 18px;
+margin:16px 0;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+
+/* LINKS */
+
+.legal-page a{
+color:#0B4141;
+text-decoration:none;
+font-weight:500;
+}
+
+.legal-page a:hover{
+text-decoration:underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+
+.legal-page{
+padding:30px 16px;
+}
+
+.content-wrapper{
+padding:10px;
+}
+
+.legal-header{
+padding:40px 0 10px 0;
+}
+
+.legal-section{
+margin-bottom:32px;
+}
+
+.legal-header h1{
+font-size:1.6em;
+}
+
+}

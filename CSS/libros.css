@@ -1,0 +1,213 @@
+/* Libros*/
+
+.libros-intro {
+   background: linear-gradient(to bottom, #ffd8d8, #ffffff);
+   padding: 40px 20px;
+   text-align: center;
+}
+
+.libros-intro h1 {
+   font-size: 36px;
+   color: #000000;
+   margin-bottom: 10px;
+}
+
+.libros-intro hr {
+   position: relative;
+   width: 0;
+   height: 4px;
+   background-color: #0B4141;
+   border: none;
+   margin: 0 auto 20px auto;
+   border-radius: 2px;
+   animation: underline-grow1 1s ease-in-out forwards;
+}
+
+.separador-libros{
+   
+   width: 0;
+   height: 4px;
+   background-color: #0B4141;
+   border: none;
+   margin: 0 auto 20px auto;
+   border-radius: 2px;
+   animation: underline-grow2 1s ease-in-out forwards;
+}
+
+ @keyframes underline-grow1 {
+   from {
+     width: 0;
+   }
+   to {
+     width: 60px;
+   }
+ }
+
+ @keyframes underline-grow2 {
+   from {
+     width: 0;
+   }
+   to {
+     width: 60%;
+   }
+ }
+
+.libros-intro p {
+   font-size: 18px;
+   color: #555;
+   max-width: 700px;
+   margin: 0 auto;
+   line-height: 1.6;
+}
+/* Animacion para que los libros se deslicen*/
+.slide {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+ }
+ 
+ /* Cuando entra en viewport */
+ .slide-in {
+   opacity: 1;
+   transform: translateY(0);
+ }
+ 
+.libros {
+   display: flex;
+   flex-wrap: wrap;              
+   gap: 100px;
+   padding: 40px;
+   background-color: white;
+   text-align: center;
+   justify-content: center;
+   overflow-x: hidden; 
+   overflow-y: hidden;          
+   box-sizing: border-box;      
+}
+
+.libro {
+   width: 250px;
+   text-align: center;
+   justify-content: center;
+   background-color: white;
+   box-sizing: border-box;       
+   word-wrap: break-word;        
+}
+ 
+ .libro h1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 250px;
+ }
+ 
+ .libro img{
+    height: 156px;
+ }
+ 
+ a{
+    text-decoration: none;
+ }
+ 
+ .botones-libros{
+    padding-bottom: 10px;
+ }
+ 
+ .comprar {
+    background-color: #0B4141;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+ }
+ .comprar:hover {
+    background-color:#0B4141;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ }
+ .saber-más {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    border-width: 2px;
+    border-radius: 100px;
+    border-color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+ }
+ .saber-más:hover {
+    background-color: #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ }
+
+ .fade-in {
+   animation: fadeIn 0.5s ease forwards;
+   opacity: 0;
+}
+
+.fade-out {
+   animation: fadeOut 0.5s ease forwards;
+   opacity: 1;
+}
+
+@keyframes fadeIn {
+   to {
+       opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+   to {
+       opacity: 0;
+   }
+}
+
+ #infoBio{
+   display: none;
+}
+
+#info13Llaves {
+   display: none;
+}
+
+#infoSensaido {
+   display: none;
+}
+
+#infoQueso{
+   display: none;
+}
+
+.infoLibros{
+   margin-top: 20px;
+   background-color: #eef5ff;
+   border-left: 5px solid #0B4141;
+   padding: 15px;
+   border-radius: 8px;
+}
+
+.infoLibros h2{
+   margin-top: 0;
+   color: #0B4141;
+}
