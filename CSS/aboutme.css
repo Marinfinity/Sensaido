@@ -103,7 +103,7 @@
    text-decoration: none;
    text-transform: uppercase;
    list-style: none;
-   color: white;
+   color: rgb(0, 0, 0);
    padding: 20px 0 0 0;
 }
 
@@ -118,7 +118,7 @@
    margin: 10px 15px;
    padding: 10px 20px;
    font-size: large;
-   color: white;
+   color: rgb(0, 0, 0);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    position: relative;
    transition: color 0.3s ease;
