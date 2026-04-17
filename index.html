@@ -24,8 +24,8 @@
     <header>
         <section class="header-name">
             <div class="nombre" onclick="location.href = 'index.html';">
-                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px" class="img-nombre"
-                    onclick="location.href='index.html'">
+                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px"
+                    class="img-nombre" onclick="location.href='index.html'">
             </div>
         </section>
         <section class="index">
@@ -44,13 +44,22 @@
         </section>
     </header>
     <section class="quote">
-        <video autoplay muted loop>
-            <source src="./Videos/home-beta.mp4" type="video/mp4">
-        </video>
-        <h1>"Cuando te enamoras de tu <strong class="strong">visión</strong> <br>la conviertes en tu única <strong
-                class="strong">misión</strong>"</h1>
-        <div class="Start-Now"><a href="contacto.html">Contáctanos</a></div>
-    </section>
+    <video class="quote-video" autoplay muted loop playsinline>
+        <source src="./Videos/home-beta.mp4" type="video/mp4">
+    </video>
+
+    <div class="quote-overlay"></div>
+
+    <div class="quote-content">
+        <h1>
+            "Cuando te enamoras de tu <span class="accent">visión</span>,<br> 
+            la conviertes en tu única <span class="accent">misión</span>"
+        </h1>
+        <div class="quote-action">
+            <a href="contacto.html" class="btn-quote">Contáctanos</a>
+        </div>
+    </div>
+</section>  
 
     <section class="presentation">
         <section class="keywords">
@@ -62,83 +71,75 @@
             </ul>
         </section>
         <section class="presentation-content">
-            <div class="presentation-photo">
-                <img src="./Imgs/Juanjo.png" alt="Juan José Valero Durán" class="img-sun-tzu">
-            </div>
-            <div class="presentation-text">
-                <h2>¿Quién soy?</h2>
-                <hr>
-                <p>
-                    Soy <strong>Juan José Valero Durán</strong>, emprendedor, experto en alimentación y mentor de
-                    emprendimiento con más de 30 años de experiencia en gastronomía, comercio y desarrollo empresarial.
-                </p>
-                <p>
-                    He desarrollado una carrera multidisciplinar que combina <strong>conocimiento profundo de la
-                        alimentación, visión empresarial, comercio internacional y desarrollo personal</strong>. Durante
-                    décadas he trabajado con chefs como <strong>Martín Berasategui</strong> y <strong>Ferran
-                        Adrià</strong>, y asesorado a restaurantes y grupos de hostelería en productos de alto nivel.
-                </p>
-                <p>
-                    Soy considerado uno de los mayores expertos en quesos de España. Fui fundador de <strong>La
-                        Boulette</strong> y participé en la organización del <strong>Túnel del Queso</strong> y del
-                    <strong>Campeonato de Quesos Artesanos Españoles</strong> junto a <strong>José Luis Martín</strong>.
-                </p>
-                <p>
-                    Mi experiencia abarca <strong>aceites, jamones, embutidos, trufas, setas, hongos y productos de
-                        caza</strong>, y también he trabajado en <strong>comercio internacional</strong> con mercados
-                    como China y Rusia, desarrollando habilidades en negociación y exportación.
-                </p>
-                <p>
-                    Soy <strong>máster en Relaciones Internacionales y Comercio Exterior</strong>, tengo formación en
-                    marketing, una <strong>cátedra en Alimentación, Cultura Gastronómica y Creatividad</strong> y soy
-                    <strong>tercer Dan de Karate</strong>, disciplina que ha reforzado mi constancia, equilibrio y
-                    desarrollo personal.
-                </p>
-                <p>
-                    A lo largo de mi vida he fundado varias empresas, algunas fracasaron, otras prosperaron y varias
-                    superaron expectativas. Actualmente acompaño a nuevos emprendedores como <strong>mentor en
-                        iniciativas del Ayuntamiento de Madrid</strong>, ayudando a convertir ideas en proyectos sólidos
-                    y con propósito.
-                </p>
+            <div class="presentation-container">
+                <div class="presentation-photo">
+                    <img src="./Imgs/Juanjo.png" alt="Juan José Valero Durán" class="profile-img">
+                </div>
+
+                <div class="presentation-text">
+                    <span>Trayectoria y Propósito</span>
+                    <h2>¿Quién soy?</h2>
+                    <hr class="separator">
+
+                    <p>
+                        Soy <strong>Juan José Valero Durán</strong>, emprendedor y mentor con más de 30 años de
+                        experiencia en gastronomía de alto nivel, comercio internacional y desarrollo empresarial.
+                    </p>
+
+                    <p>
+                        A lo largo de mi carrera, he colaborado con referentes como <strong>Martín Berasategui</strong>
+                        y <strong>Ferran Adrià</strong>. Soy considerado uno de los mayores expertos en quesos de
+                        España, habiendo fundado <strong>La Boulette</strong> y co-organizado el Campeonato de Quesos
+                        Artesanos Españoles.
+                    </p>
+
+                    <p>
+                        Mi perfil combina la visión de negocio con la disciplina del <strong>Karate (Tercer
+                            Dan)</strong> y una sólida formación académica en Relaciones Internacionales. Esta mezcla de
+                        equilibrio y estrategia es la que aplico hoy como <strong>mentor en el Ayuntamiento de
+                            Madrid</strong>, ayudando a nuevos emprendedores a consolidar proyectos con propósito.
+                    </p>
+
+                    <div class="badges">
+                        <span class="badge">Gastronomía</span>
+                        <span class="badge">Mentoring</span>
+                        <span class="badge">Estrategia</span>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
 
     <section class="sensaido">
+        <div class="sensaido-overlay"></div>
 
-        <div class="sensaido-content">
-            <div class="sensaido-text">
-                <h2><span>PROYECTO MÁS RECIENTE </span><br> SENSAIDO ‣ </h2>
-                <p>Complementos y vitaminas para tu bienestar diario</p>
-                <p>Sensaido es una empresa con más de 25 años de experiencia en el sector de la naturopatía y la salud,
-                    especializada en ofrecer soluciones naturales e innovadoras para el bienestar integral. Su enfoque
-                    se basa en la planificación y estrategias personalizadas, reconociendo que cada cliente es único y
-                    adaptando sus planes para satisfacer necesidades específicas de salud y bienestar.
+        <div class="sensaido-container">
+            <div class="sensaido-card">
+                <span class="sensaido-subtitle">Proyecto Destacado</span>
+                <h2>Sensaido ‣</h2>
+                <hr class="sensaido-separator">
 
-                    <br><br>
+                <p class="sensaido-intro">Complementos y vitaminas para tu bienestar diario.</p>
 
-                    La filosofía de Sensaido se alinea con principios de la cultura japonesa, como el ikigai, que
-                    representa la búsqueda de un propósito y satisfacción en la vida, y el kaizen, que promueve la
-                    mejora continua mediante pequeños cambios diarios. Estos conceptos reflejan su compromiso con el
-                    crecimiento personal y el equilibrio emocional.
-
-                    <br><br>
-                    Además, Sensaido valora la belleza de lo imperfecto y transitorio, inspirándose en el wabi-sabi, una
-                    filosofía que celebra la simplicidad y la autenticidad. Esta perspectiva se traduce en una atención
-                    plena a los detalles y en la apreciación de las experiencias cotidianas.
-
-                    <br><br>
-
-                    En resumen, Sensaido combina la sabiduría ancestral con la innovación moderna para ofrecer productos
-                    y servicios que fomentan una vida más saludable, consciente y equilibrada.
+                <p>
+                    Con más de 25 años de experiencia en naturopatía, <strong>Sensaido</strong> ofrece soluciones
+                    naturales basadas en la planificación personalizada. Su enfoque une la sabiduría ancestral con la
+                    innovación moderna.
                 </p>
-                <div class="Start-Now"><a href="https://sensaido.com/?srsltid=AfmBOopHjMp2HyaWV-dAS0igZlp9hAcyHUPxRebcT6Medznr9MaxnQCB">Mejora tu bienestar ahora</a>
+
+                <p>
+                    Nuestra filosofía se inspira en conceptos japoneses fundamentales: el <strong>Ikigai</strong>
+                    (búsqueda del propósito), el <strong>Kaizen</strong> (mejora continua) y el
+                    <strong>Wabi-sabi</strong> (la belleza de la sencillez y lo auténtico).
+                </p>
+
+                <div class="sensaido-action">
+                    <a href="https://sensaido.com/" target="_blank" class="btn-sensaido">
+                        Mejora tu bienestar ahora →
+                    </a>
                 </div>
-
-
             </div>
         </div>
-
     </section>
     <section class="keywords">
         <ul class="keywords">
@@ -157,97 +158,107 @@
     </section>
 
     <section class="talleres-y-coaching">
-
         <div class="texto-intro-fb">
-            <h2>TALLERES Y COACHING</h2>
-            <hr>
-            A través de mis talleres y procesos de coaching, acompaño a personas y equipos en el camino hacia una
-            transformación real y consciente. Cada experiencia está diseñada para desarrollar el potencial, afrontar
-            retos
-            con una nueva mirada y generar cambios sostenibles.
-            <br><br>
-            <strong><a href="./talleres.html">Ver más sobre talleres→</a></strong>
-            <strong><a href="./coaching.html">Ver más sobre coaching→</a></strong>
-
+            <span>Formación y Crecimiento</span>
+            <h2>Talleres y Coaching</h2>
+            <hr class="separator-center">
+            <p>
+                Acompaño a personas y equipos hacia una transformación real y consciente,
+                diseñando experiencias para desarrollar el potencial y generar cambios sostenibles.
+            </p>
+            <div class="intro-links">
+                <a href="./talleres.html" class="btn-link">Ver talleres →</a>
+                <a href="./coaching.html" class="btn-link">Ver coaching →</a>
+            </div>
         </div>
 
-        <section class="container-home">
-            <div class="section-divided-home">
-                <div class="section-pequeña-home">
-
-                    <img src="./Imgs/Taller quesos 1.jpg">
-                    <h1>Conocimientos Gastronómicos</h1>
-                    <p>El taller más quesero</p>
-
+        <div class="container-home">
+            <!-- Columna Izquierda -->
+            <div class="column-side">
+                <div class="card-home small">
+                    <img src="./Imgs/Taller quesos 1.jpg" alt="Taller de quesos">
+                    <div class="card-content">
+                        <h3>Conocimientos Gastronómicos</h3>
+                        <p>El taller más quesero</p>
+                    </div>
                 </div>
-                <div class="section-pequeña-home">
-                    <img src="./Imgs/Sensaido2017.png">
-                    <h1>Sensaido 2017</h1>
-                    <p>DEMOSTRACIÓN</p>
-
-                </div>
-            </div>
-            <div class="section-grande-home">
-                <video height="550" id="video-element" autoplay muted loop>
-                    <source src="./Videos/taller exito.mp4" type="video/mp4">
-                </video>
-
-                <h1>Como alcanzar el éxito</h1>
-                <p>Taller para Emprendedores</p>
-
-            </div>
-            <div class="section-divided-home">
-                <div class="section-pequeña-home">
-
-                    <img src="./Imgs/estres.png">
-                    <h1>Controla tu estrés.</h1>
-                    <p>Domina tu mente y domínalo todo.</p>
-
-
-                </div>
-                <div class="section-pequeña-home">
-                    <img src="./Imgs/dibujosraros.png">
-                    <h1>Bioenergía emocional</h1>
-                    <p>Cómo afectan tus emociones a tu salud</p>
-
+                <div class="card-home small">
+                    <img src="./Imgs/Sensaido2017.png" alt="Sensaido">
+                    <div class="card-content">
+                        <h3>Sensaido 2017</h3>
+                        <p>Demostración</p>
+                    </div>
                 </div>
             </div>
 
+            <!-- Columna Central (Grande) -->
+            <div class="column-main">
+                <div class="card-home large">
+                    <video id="video-element" autoplay muted loop playsinline>
+                        <source src="./Videos/taller exito.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <h3>Cómo alcanzar el éxito</h3>
+                        <p>Taller para Emprendedores</p>
+                    </div>
+                </div>
+            </div>
 
-        </section>
-
+            <!-- Columna Derecha -->
+            <div class="column-side">
+                <div class="card-home small">
+                    <img src="./Imgs/estres.png" alt="Control de estrés">
+                    <div class="card-content">
+                        <h3>Controla tu estrés</h3>
+                        <p>Domina tu mente</p>
+                    </div>
+                </div>
+                <div class="card-home small">
+                    <img src="./Imgs/dibujosraros.png" alt="Bioenergía">
+                    <div class="card-content">
+                        <h3>Bioenergía emocional</h3>
+                        <p>Emociones y salud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="libros-home-fondo">
-        <div class="texto-intro">
+     <section class="libros-section">
+        <div class="libros-bg-overlay"></div>
 
-            <h1>MIS LIBROS</h1>
-            <hr>
-            <p>A lo largo de los años he volcado mi experiencia y conocimientos en una serie de libros que abordan el
-                desarrollo personal, la salud emocional y el bienestar integral. Aquí te presento una selección de mis
-                obras
-                más destacadas.
-                <br><br>
-                <a href="./libros.html">Ver Más.→</a>
-            </p>
+        <div class="libros-content">
+            <div class="libros-intro">
+                <span>Publicaciones y Obras</span>
+                <h2>Mis Libros</h2>
+                <hr class="separator-libros">
+                <p>
+                    A lo largo de los años he volcado mi experiencia y conocimientos en una serie de libros que abordan
+                    el desarrollo personal, la salud emocional y el bienestar integral.
+                </p>
+                <a href="./libros.html" class="btn-libros">Explorar bibliografía completa →</a>
+            </div>
+
+            <div class="libros-grid">
+                <div class="libro-item">
+                    <img src="./Imgs/libros/BioenergíaEmocional.jpg" alt="Bioenergía Emocional">
+                   
+                </div>
+                <div class="libro-item">
+                    <img src="./Imgs/libros/SENSAIDO.jpg" alt="Sensaido Libro">
+                   
+                </div>
+                <div class="libro-item">
+                    <img src="./Imgs/libros/LaTeoríaDeLas13Llaves.jpg" alt="La Teoría de las 13 Llaves">
+                    
+                </div>
+                <div class="libro-item">
+                    <img src="./Imgs/libros/AquíEstáMiQueso.jpg" alt="Aquí Está Mi Queso">
+                    
+                </div>
+            </div>
         </div>
-        <section class="libros-home">
-
-            <div class="libro-home">
-                <img src="./Imgs/libros/BioenergíaEmocional.jpg">
-            </div>
-            <div class="libro-home">
-                <img src="./Imgs/libros/SENSAIDO.jpg">
-            </div>
-            <div class="libro-home">
-                <img src="./Imgs/libros/LaTeoríaDeLas13Llaves.jpg">
-            </div>
-            <div class="libro-home">
-                <img src="./Imgs/libros/AquíEstáMiQueso.jpg">
-            </div>
-
-
-        </section>
+    </section>
 
     </section>
     <footer class="footer">
