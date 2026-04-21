@@ -305,12 +305,22 @@ body {
    left: 0;
    right: 0;
    bottom: 0;
-   background-image: url('../Imgs/StockCake-Sunrise\ Tai\ Chi_1747140743.jpg');
    background-size: cover;
    background-position: center;
    opacity: 0.4;
    z-index: 0;
 }
+
+/*fondo de sensaido y de cursos*/
+.sensaido--uno::before {
+   background-image: url('../Imgs/StockCake-Sunrise\ Tai\ Chi_1747140743.jpg');
+}
+
+.sensaido--curso::before {
+   background-image: url('../Imgs/Copia\ de\ ALCANZA\ EL\ ÉXITO\ .png');
+}
+
+
 
 .sensaido-overlay {
    position: absolute;

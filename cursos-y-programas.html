@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="********">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Cabin'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Special+Gothic+Condensed+One'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/ejemplo.css">
+    <link rel="stylesheet" href="CSS/header-nav-footer.css">
+    <link rel="stylesheet" href="CSS/cursos-y-programas.css">
+
+
+
+    <title>Juan José Valero Durán</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-name">
+            <div class="nombre" onclick="location.href = 'index.html';">
+                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px"
+                    class="img-nombre" onclick="location.href='index.html'">
+            </div>
+        </section>
+        <section class="index">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu-list">
+                <li><a href="SobreMí.html">Sobre mí</a></li>
+                <li class="separador">|</li>
+                <li><a href="coaching.html">Coaching</a></li>
+                <li class="separador">|</li>
+                <li><a href="talleres.html">Talleres y Conferencias</a></li>
+                <li class="separador">|</li>
+                <li><a href="libros.html">Libros</a></li>
+                <li class="separador">|</li>
+                <li><a href="cursos-y-programas.html">Cursos y Programas</a></li>
+                <li class="separador">|</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="cursos-page">
+        <!-- Encabezado de la Sección -->
+        <div class="cursos-intro">
+            <span>Formación con Propósito</span>
+            <h1>Cursos y Programas</h1>
+            <hr class="cursos-separator">
+            <p>
+                Programas diseñados para transformar tu mentalidad, potenciar tu negocio o profundizar en la cultura
+                gastronómica. Elige el camino que mejor se adapte a tu momento actual.
+            </p>
+        </div>
+
+        <!--Curso destacado-->
+        <section class="sensaido sensaido--curso">
+            <div class="sensaido-overlay"></div>
+
+            <div class="sensaido-container">
+                <div class="sensaido-card">
+                    <span class="sensaido-subtitle">Más Vendido</span>
+                    <h2>Alcanza el Éxito ‣</h2>
+                    <hr class="sensaido-separator">
+
+                    <p class="sensaido-intro">Cómo Alcanzar el Éxito Sin Ansiedad, Sin Estrés y Sin Perder tu Salud (Aunque Ahora estés agotad@)</p>
+
+                    <p>
+                        Descubre el método que une éxito, salud y equilibrio para que consigas resultados reales sin
+                        caer en el agotamiento físico y mental.
+                    </p>
+
+                    <p>
+                        Nuestra filosofía se inspira en conceptos japoneses fundamentales: el <strong>Ikigai</strong>
+                        (búsqueda del propósito), el <strong>Kaizen</strong> (mejora continua) y el
+                        <strong>Wabi-sabi</strong> (la belleza de la sencillez y lo auténtico).
+                    </p>
+
+                    <div class="sensaido-action">
+                        <a href="https://sensaido.com/" target="_blank" class="btn-sensaido">
+                            Mejora tu bienestar ahora →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedor de Cursos -->
+        <div class="cursos-grid">
+
+            <!-- Curso 1 -->
+            <article class="cursos-card">
+                <div class="cursos-image">
+                    <img src="./Imgs/Fondo-Estántería.jpg" alt="Curso Mentoring">
+                    <span class="cursos-tag">Mentoring</span>
+                </div>
+                <div class="curso-info">
+                    <h3>AMBIA TU VIDA EN 7 DÍAS - CAMBIOS A PARTIR DEL TERCER DÍA</h3>
+                    <p>Aprende las estrategias reales para emprender con éxito, gestionando el miedo y optimizando tus
+                        recursos desde el primer día.</p>
+                    <div class="curso-meta">
+                        <span><strong>Duración:</strong> 8 Semanas</span>
+                        <span><strong>Modalidad:</strong> Online / Presencial</span>
+                    </div>
+                    <a href="#" class="btn-curso">Ver detalles del curso</a>
+                </div>
+            </article>
+
+            <!-- Curso 2 -->
+            <article class="cursos-card">
+                <div class="cursos-image">
+                    <img src="./Imgs/Fondo-Estántería.jpg" alt="Curso Gastronomía">
+                    <span class="cursos-tag">Gastronomía</span>
+                </div>
+                <div class="curso-info">
+                    <h3>Maestría en Quesos</h3>
+                    <p>Un viaje profundo por el mundo del queso artesano: análisis sensorial, selección de producto y
+                        gestión de tiendas gourmet.</p>
+                    <div class="curso-meta">
+                        <span><strong>Duración:</strong> Intensivo</span>
+                        <span><strong>Modalidad:</strong> Presencial</span>
+                    </div>
+                    <a href="#" class="btn-curso">Ver detalles del curso</a>
+                </div>
+            </article>
+
+            <!-- Curso 3 -->
+            <article class="cursos-card">
+                <div class="cursos-image">
+                    <img src="./Imgs/Fondo-Estántería.jpg" alt="Curso Bienestar">
+                    <span class="cursos-tag">Bienestar</span>
+                </div>
+                <div class="curso-info">
+                    <h3>Método Sensaido: Longevidad</h3>
+                    <p>Integra hábitos de la cultura japonesa y estrategias de bienestar emocional para vivir una vida
+                        con más energía y enfoque.</p>
+                    <div class="curso-meta">
+                        <span><strong>Duración:</strong> 4 Semanas</span>
+                        <span><strong>Modalidad:</strong> Online</span>
+                    </div>
+                    <a href="#" class="btn-curso">Ver detalles del curso</a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- CTA Final -->
+        <div class="cursos-cta">
+            <p>¿No estás seguro de qué programa es para ti?</p>
+            <a href="contacto.html" class="btn-cta-secondary">Solicita una asesoría gratuita →</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imgs/logos/Logo-Juanjo-verde.png" alt="nombre" class="img-nombre">
+            </div>
+            <div class="footer-index">
+                <div class="footer-index"><a href="coaching.html"><i class="fas fa-user-friends"></i> Coaching</a>
+                </div>
+                <div class="footer-index"><a href="talleres.html"><i class="fas fa-microphone"></i> Talleres y
+                        Conferencias</a></div>
+                <div class="footer-index"><a href="libros.html"><i class="fas fa-book"></i> Libros</a></div>
+                <div class="footer-index"><a href="contacto.html"><i class="fas fa-phone"></i> Contacto</a></div>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: +34 699 00 82 77</p>
+                <p>info@juanjosevalero.com</p>
+                <a href="https://www.facebook.com/juanjose.valeroduran" target="_blank" rel="noopener"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://x.com/duran_juan54065" target="_blank" rel="noopener"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@juanjosevaleroduran7477?app=desktop" target="_blank" rel="noopener"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/juan-jose-valero-duran-a48ba528/" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin"></i></a>
+                <p id="texto-copyright">© 2026 Juan José Valero Durán. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-legal">
+            <p><a href="aviso-legal.html">Aviso legal</a></p>
+            <p><a href="politica-privacidad.html">Política de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="./JS/mostrarTexto.js"></script>
+    <script src="./JS/slide-in.js"></script>
+    <script src="./JS/cambiar-fecha-copyright.js"></script>
+</body>
+
+</html>
