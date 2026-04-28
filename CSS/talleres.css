@@ -158,89 +158,134 @@
 
 
 /*INTRO*/
-
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 800px;
-    align-items: center;
-    overflow: hidden;
+.intro-seccion {
+    padding: 80px 5%;
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333333;
 }
 
-
-.intro-text {
-    padding-top: 20px;
-    width: 50%;
+.intro-contenedor {
+    display: flex;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    gap: 60px;
+    align-items: flex-start;
 }
 
-.intro-text hr {
-    width: 60px;
-    height: 4px;
-    background-color: #0B4141;
-    border: none;
-    margin: auto;
-    border-radius: 2px;
-    animation: underline-grow1 1s ease-in-out forwards;
+/* Lado de la Imagen */
+.intro-imagen {
+    flex: 1;
+    position: sticky; 
+    top: 50px;
 }
 
-.intro-text h1 {
-    font-size: 36px;
-    margin-bottom: 6px;
-    text-align: center;
-    margin: 30 0 0 30px;
-}
-
-.intro-text h2 {
-    color: #1a1a1a;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    max-width: 350px;
-}
-
-.intro-text p {
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 18px;
-    margin: 0 30px 30px 30px;
-    /* arriba derecha abajo izquierda*/
-}
-
-.intro-img {
-    height: 500px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    overflow: hidden;
-}
-
-
-.intro-img img {
+.intro-imagen img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 20px 20px 0px #0B4141;
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
-    .intro {
-        display: block;
-        max-height: 100%;
-    }
-
-    .intro-img,
-    .intro-text {
-        width: 100%;
-    }
-
-    .intro-img {
-        margin-bottom: 20px;
-    }
+/* Lado del Texto */
+.intro-contenido {
+    flex: 1.2;
+  
 }
 
+.intro-contenido:nth-of-type(1) {
+      text-align:center;
+}
+
+.intro-subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: #888888;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.intro-contenido h1, .intro-contenido h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.intro-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #c0a060;
+    border: none;
+    margin: 20px 0 30px 0;
+}
+
+.comentarios-separador{
+    width: 80px;
+    height: 4px;
+    background-color: #0B4141;
+    border: none;
+    margin: 20px auto 40px auto;
+}
+/* Párrafos */
+.intro-descripcion p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444444;
+}
+
+
+/* Botón de Acción */
+.contenedor-boton {
+    margin-top: 40px;
+}
+
+.boton-accion {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #0B4141;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-accion:hover {
+    background-color: #c0a060;
+    transform: translateY(-3px);
+}
+
+/* Responsivo para móviles y tablets */
+@media (max-width: 992px) {
+    .intro-contenedor {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .intro-imagen {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .intro-imagen img {
+        box-shadow: 15px 15px 0px #0B4141;
+    }
+
+    .intro-contenido h1 {
+        font-size: 2rem;
+    }
+
+    .intro-seccion {
+        padding: 50px 5%;
+    }
+}
 
 @keyframes underline-grow1 {
     from {
@@ -528,127 +573,138 @@
 
 }
 
-
-
 /*COMENTARIOS*/
+.testimonios-seccion {
+    padding: 80px 5%;
+    background-color: #f9fbf6; /* Fondo sutil para diferenciar secciones */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
 
-.comentarios {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px 20px;
-    background-color: #000000;
+/* Encabezado */
+.testimonios-intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
     text-align: center;
-    justify-content: center;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    margin: 0 auto;
-    /* Centra el contenedor */
 }
 
-.texto-intro {
-    opacity: 1;
-    color: #b1b1b1;
-    text-align: center;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-bottom: 60px;
+.testimonios-subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: #888888;
+    font-weight: bold;
 }
 
-.texto-intro h1 {
-    color: white;
-    font-weight: bolder;
-    font-size: 36px;
+.testimonios-titulo {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin: 10px 0;
 }
 
-.texto-intro hr {
-    position: relative;
-    width: 0;
+.testimonios-separador {
+    width: 80px;
     height: 4px;
-    background-color: #0B4141;
+    background-color: #c0a060; /* Dorado para consistencia */
     border: none;
-    margin: 0 auto 20px auto;
-    border-radius: 2px;
-    animation: underline-grow 1s ease-in-out forwards;
+    margin: 20px auto;
 }
 
-.texto-intro a {
-    color: #ffffff;
+.testimonios-descripcion {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
 }
 
-@keyframes underline-grow {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 200px;
-    }
+.testimonios-descripcion a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0B4141;
 }
 
+/* Cuadrícula de tarjetas */
+.testimonios-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.comentario {
+/* Tarjeta Individual */
+.testimonio-tarjeta {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 5px solid #0B4141; /* El verde de tu marca */
     position: relative;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-    text-align: justify;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    z-index: 1;
-}
-
-.comentario-img {
-    position: absolute;
-    justify-self: left;
-    height: 40px;
-    z-index: -1;
-}
-
-.texto {
-    z-index: 1;
-    padding: auto;
-    padding-left: 25px;
-    padding-top: 5px;
-    line-height: 23px;
-}
-
-.nombre-comentario {
-    text-align: left;
-    justify-content: left;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 20px;
-    line-height: 5px;
-    box-sizing: border-box;
-    /* Para que el borde no afecte el tamaño */
-    overflow: hidden;
-    /* Ocultar cualquier parte de la imagen que sobresalga */
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 
-.nombre-comentario pre {
-    font-size: small;
-    color: #616161;
+.testimonio-tarjeta:hover {
+    transform: translateY(-5px);
 }
 
-.nombre-comentario h1 {
-    font-size: larger;
-    padding-top: 15px;
+.testimonio-comilla {
+    width: 30px;
+    opacity: 0.2;
+    margin-bottom: 20px;
 }
 
-.img-comentario {
+.testimonio-cuerpo p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444444;
+    font-style: italic;
+    margin-bottom: 30px;
+}
 
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    margin-top: 15px;
-    border: #616161 2px solid;
+/* Info del Usuario */
+.testimonio-usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.usuario-foto {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c0a060; /* Aro dorado */
+}
+
+.usuario-datos h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+.usuario-datos span {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .testimonios-titulo {
+        font-size: 2rem;
+    }
+    
+    .testimonios-cuadricula {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonios-seccion {
+        padding: 50px 5%;
+    }
 }
 
 /*Ya Confían en Mí*/

@@ -7,270 +7,203 @@
     <title>Document</title>
 </head>
 <style>
-.courses-page {
-    padding: 100px 5%;
-    background-color: #fcfcfc;
+
+/* --- SECCIÓN TESTIMONIOS --- */
+.testimonios-seccion {
+    padding: 80px 5%;
+    background-color: #f9fbf6; /* Fondo sutil para diferenciar secciones */
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Introducción */
-.courses-intro {
-    text-align: center;
+/* Encabezado */
+.testimonios-intro {
     max-width: 800px;
-    margin: 0 auto 60px;
+    margin: 0 auto 60px auto;
+    text-align: center;
 }
 
-.courses-intro span {
+.testimonios-subtitulo {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
-    color: #888;
+    color: #888888;
     font-weight: bold;
 }
 
-.courses-intro h1 {
-    font-size: 3rem;
+.testimonios-titulo {
+    font-size: 2.5rem;
     color: #1a1a1a;
     margin: 10px 0;
 }
 
-.courses-separator {
-    width: 70px;
+.testimonios-separador {
+    width: 80px;
     height: 4px;
-    background-color: #c0a060;
+    background-color: #c0a060; /* Dorado para consistencia */
     border: none;
     margin: 20px auto;
 }
 
-.courses-intro p {
+.testimonios-descripcion {
     font-size: 1.1rem;
+    line-height: 1.7;
     color: #555;
-    line-height: 1.8;
 }
 
-/* Grid de Cursos */
-.courses-grid {
+.testimonios-descripcion strong {
+    color: #0B4141;
+}
+
+/* Cuadrícula de tarjetas */
+.testimonios-cuadricula {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Tarjeta de Curso */
-.course-card {
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
+/* Tarjeta Individual */
+.testimonio-tarjeta {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #0B4141; /* El verde de tu marca */
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 
-.course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+.testimonio-tarjeta:hover {
+    transform: translateY(-5px);
 }
 
-/* Imagen y Tag */
-.course-image {
-    position: relative;
-    height: 230px;
-    overflow: hidden;
+.testimonio-comilla {
+    width: 30px;
+    opacity: 0.2;
+    margin-bottom: 20px;
 }
 
-.course-image img {
-    width: 100%;
-    height: 100%;
+.testimonio-cuerpo p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444444;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Info del Usuario */
+.testimonio-usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.usuario-foto {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    border: 2px solid #c0a060; /* Aro dorado */
 }
 
-.course-card:hover .course-image img {
-    transform: scale(1.1);
-}
-
-.course-tag {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #0B4141;
-    color: #ffffff;
-    padding: 6px 15px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 4px;
+.usuario-datos h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #1a1a1a;
     letter-spacing: 1px;
 }
 
-/* Info del Curso */
-.course-info {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.course-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #1a1a1a;
-}
-
-.course-info p {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    flex-grow: 1;
-}
-
-.course-meta {
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 0.85rem;
+.usuario-datos span {
+    font-size: 0.8rem;
     color: #888;
+    text-transform: uppercase;
 }
 
-.course-meta strong {
-    color: #333;
-}
-
-/* Botón del Curso */
-.btn-course {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    background-color: transparent;
-    border: 2px solid #0B4141;
-    color: #0B4141;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.btn-course:hover {
-    background-color: #0B4141;
-    color: #ffffff;
-}
-
-/* CTA Final Inferior */
-.courses-cta {
-    text-align: center;
-    margin-top: 80px;
-    padding-top: 40px;
-    border-top: 1px solid #eee;
-}
-
-.courses-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.btn-cta-secondary {
-    color: #c0a060;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.btn-cta-secondary:hover {
-    color: #0B4141;
-}
-
-/* Responsive */
+/* Adaptación para móviles */
 @media (max-width: 768px) {
-    .courses-grid {
+    .testimonios-titulo {
+        font-size: 2rem;
+    }
+    
+    .testimonios-cuadricula {
         grid-template-columns: 1fr;
     }
     
-    .courses-intro h1 {
-        font-size: 2.2rem;
+    .testimonios-seccion {
+        padding: 50px 5%;
     }
 }
 </style>
 
 <body>
-<section class="courses-page">
-    <!-- Encabezado de la Sección -->
-    <div class="courses-intro">
-        <span>Formación con Propósito</span>
-        <h1>Cursos y Programas</h1>
-        <hr class="courses-separator">
-        <p>
-            Programas diseñados para transformar tu mentalidad, potenciar tu negocio o profundizar en la cultura gastronómica. Elige el camino que mejor se adapte a tu momento actual.
+   <section class="testimonios-seccion">
+    <!-- Encabezado de la sección -->
+    <div class="testimonios-intro">
+        <span class="testimonios-subtitulo">RESEÑAS</span>
+        <h2 class="testimonios-titulo">Opiniones y Comentarios</h2>
+        <hr class="testimonios-separador">
+        <p class="testimonios-descripcion">
+            Descubre las experiencias de quienes han asistido a nuestros talleres y conferencias. 
+            Sus palabras reflejan el impacto real de cada encuentro, la conexión vivida y el conocimiento compartido.
+            <br><br>
+            ¿Tú también fuiste parte? <strong>¡Déjanos tu opinión!</strong>
         </p>
     </div>
 
-    <!-- Contenedor de Cursos -->
-    <div class="courses-grid">
+    <!-- Contenedor de las tarjetas -->
+    <div class="testimonios-cuadricula">
         
-        <!-- Curso 1 -->
-        <article class="course-card">
-            <div class="course-image">
-                <img src="./Imgs/curso-mentoring.jpg" alt="Curso Mentoring">
-                <span class="course-tag">Mentoring</span>
+        <!-- Tarjeta 1 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Me siento afortunado de formar parte de este proyecto. Enhorabuena a todos por vuestro esfuerzo, ha sido espectacular.</p>
             </div>
-            <div class="course-info">
-                <h3>De la Idea a la Acción</h3>
-                <p>Aprende las estrategias reales para emprender con éxito, gestionando el miedo y optimizando tus recursos desde el primer día.</p>
-                <div class="course-meta">
-                    <span><strong>Duración:</strong> 8 Semanas</span>
-                    <span><strong>Modalidad:</strong> Online / Presencial</span>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Juan Molina" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>JUAN MOLINA</h4>
+                    <span>Participante del taller</span>
                 </div>
-                <a href="#" class="btn-course">Ver detalles del curso</a>
             </div>
         </article>
 
-        <!-- Curso 2 -->
-        <article class="course-card">
-            <div class="course-image">
-                <img src="./Imgs/curso-quesos.jpg" alt="Curso Gastronomía">
-                <span class="course-tag">Gastronomía</span>
+        <!-- Tarjeta 2 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Quiero expresar mi más profundo agradecimiento a Juanjo por despertar nuevas ideas. A mí particularmente me hizo recapacitar sobre la posibilidad de ayudar a nuestros mayores. <br><strong>¡GRACIAS POR SER AUTÉNTICO!</strong></p>
             </div>
-            <div class="course-info">
-                <h3>Maestría en Quesos</h3>
-                <p>Un viaje profundo por el mundo del queso artesano: análisis sensorial, selección de producto y gestión de tiendas gourmet.</p>
-                <div class="course-meta">
-                    <span><strong>Duración:</strong> Intensivo</span>
-                    <span><strong>Modalidad:</strong> Presencial</span>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Jesús Juan Rubio" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>JESÚS JUAN RUBIO</h4>
+                    <span>Proceso de Coaching</span>
                 </div>
-                <a href="#" class="btn-course">Ver detalles del curso</a>
             </div>
         </article>
 
-        <!-- Curso 3 -->
-        <article class="course-card">
-            <div class="course-image">
-                <img src="./Imgs/curso-bienestar.jpg" alt="Curso Bienestar">
-                <span class="course-tag">Bienestar</span>
+        <!-- Tarjeta 3 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Excelente guía y prácticas recomendaciones. ¡De todo corazón! ¡Gracias Juanjo!</p>
             </div>
-            <div class="course-info">
-                <h3>Método Sensaido: Longevidad</h3>
-                <p>Integra hábitos de la cultura japonesa y estrategias de bienestar emocional para vivir una vida con más energía y enfoque.</p>
-                <div class="course-meta">
-                    <span><strong>Duración:</strong> 4 Semanas</span>
-                    <span><strong>Modalidad:</strong> Online</span>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Francisco Delgado" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>FRANCISCO DELGADO</h4>
+                    <span>Participante del taller</span>
                 </div>
-                <a href="#" class="btn-course">Ver detalles del curso</a>
             </div>
         </article>
 
-    </div>
-
-    <!-- CTA Final -->
-    <div class="courses-cta">
-        <p>¿No estás seguro de qué programa es para ti?</p>
-        <a href="contacto.html" class="btn-cta-secondary">Solicita una asesoría gratuita →</a>
     </div>
 </section>
 </body>

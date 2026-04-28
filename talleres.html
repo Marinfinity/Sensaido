@@ -22,8 +22,8 @@
     <header>
         <section class="header-name">
             <div class="nombre" onclick="location.href = 'index.html';">
-                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px" class="img-nombre"
-                    onclick="location.href='index.html'">
+                <img src=".\Imgs\logos\Logo-Juanjo-Blanco.png" alt="nombre" width="217px" height="92px"
+                    class="img-nombre" onclick="location.href='index.html'">
             </div>
         </section>
         <section class="index">
@@ -44,26 +44,35 @@
         </section>
     </header>
 
-    <section class="intro">
-
-        <div class="intro-img">
-            <img src="./Imgs/Juanjo Sol.jpg">
+     <section class="intro-seccion">
+    <div class="intro-contenedor">
+        <!-- Lado de la Imagen -->
+        <div class="intro-imagen">
+            <img src="./Imgs/Juanjo Sol.jpg" alt="Juanjo Sol Speaker">
         </div>
 
-        <div class="intro-text">
-            <h1>SPEAKER</h1>
-            <hr>
-            <h2>Conferencias de Formación y Talleres Informativos</h2>
+        <!-- Lado del Texto -->
+        <div class="intro-contenido">
+            <span class="intro-subtitulo">Speaker</span>
+            <h1>Conferencias de Formación y Talleres Informativos</h1>
+            <hr class="intro-separador">
 
-            <p>A lo largo de los años he desarrollado talleres y conferencias diseñados para inspirar, transformar y
-                generar impacto real. Cada encuentro es una oportunidad para compartir herramientas prácticas,
-                experiencias significativas y reflexiones profundas que motivan al crecimiento personal y profesional.
-                Si estás buscando espacios donde impulsar el cambio, despertar nuevas perspectivas y conectar con tu
-                potencial, esta sección es para ti.</p>
-            <div class="contacto-AM"><a href="contacto.html" class="Start-Now">CONTRATACIONES</a></div>
+            <div class="intro-descripcion">
+                <p>
+                    A lo largo de los años he desarrollado talleres y conferencias diseñados para inspirar, transformar y generar impacto real. Cada encuentro es una oportunidad para compartir herramientas prácticas, experiencias significativas y reflexiones profundas que motivan al crecimiento personal y profesional.
+                </p>
+                
+                <p>
+                    Si estás buscando espacios donde impulsar el cambio, despertar nuevas perspectivas y conectar con tu potencial, esta sección es para ti.
+                </p>
+
+                <div class="contenedor-boton">
+                    <a href="contacto.html" class="boton-accion">CONTRATACIONES</a>
+                </div>
+            </div>
         </div>
-
-    </section>
+    </div>
+</section>
     <section class="ult-conferencias-fondo">
         <section class="ult-talleres">
             <div class="lista-intro">
@@ -161,89 +170,70 @@
 
     </section>
 
-    <div class="texto-intro">
-        <h1>Opiniones y Comentarios</h1>
-        <hr>
-        <p>Descubre las experiencias de quienes han asistido a nuestros talleres y conferencias. Sus palabras
-            reflejan el impacto real de cada encuentro, la conexión vivida y el conocimiento compartido.
-
-            ¿Tú también fuiste parte? ¡Déjanos tu opinión!</p>
+   <section class="testimonios-seccion">
+    <!-- Encabezado de la sección -->
+    <div class="testimonios-intro">
+        <span class="testimonios-subtitulo">RESEÑAS</span>
+        <h2 class="testimonios-titulo">Opiniones y Comentarios</h2>
+        <hr class="testimonios-separador">
+        <p class="testimonios-descripcion">
+            Descubre las experiencias de quienes han asistido a nuestros talleres y conferencias. 
+            Sus palabras reflejan el impacto real de cada encuentro, la conexión vivida y el conocimiento compartido.
+            <br><br>
+            ¿Tú también fuiste parte? <a href="contacto.html">¡Déjanos tu opinión!</a>
+        </p>
     </div>
 
-    <section class="comentarios">
-
-        <div class="comentario">
-
-            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
-
-            <div class="texto">
-                <p>Me siento afortunado de formar parte de este proyecto. Enhorabuena a todos por vuestro esfuerzo ha
-                    sido espectacular</p>
+    <!-- Contenedor de las tarjetas -->
+    <div class="testimonios-cuadricula">
+        
+        <!-- Tarjeta 1 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Me siento afortunado de formar parte de este proyecto. Enhorabuena a todos por vuestro esfuerzo, ha sido espectacular.</p>
             </div>
-
-
-            <div class="nombre-comentario">
-
-
-                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
-                <div>
-                    <h1>JUAN MOLINA</h1>
-                    <pre>Participante del taller</pre>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Juan Molina" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>JUAN MOLINA</h4>
+                    <span>Participante del taller</span>
                 </div>
-
-
             </div>
-        </div>
-        <div class="comentario">
+        </article>
 
-            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
-
-            <div class="texto">
-                <p>Quiero aprovechar esta oportunidad para expresar mi más profundo agradecimiento a Juanjo por
-                    despertar nuevas ideas en las personas, a mí particularmente me hizo recapacitar sobre la
-                    posibilidad de ayudar a nuestros mayores.<br><br> GRACIAS POR SER
-                    AUTÉNTICO</p>
+        <!-- Tarjeta 2 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Quiero expresar mi más profundo agradecimiento a Juanjo por despertar nuevas ideas. A mí particularmente me hizo recapacitar sobre la posibilidad de ayudar a nuestros mayores. <br><strong>¡GRACIAS POR SER AUTÉNTICO!</strong></p>
             </div>
-
-
-            <div class="nombre-comentario">
-
-
-                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
-                <div>
-                    <h1>JESÚS JUAN RUBIO</h1>
-                    <pre>Proceso de Coaching</pre>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Jesús Juan Rubio" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>JESÚS JUAN RUBIO</h4>
+                    <span>Proceso de Coaching</span>
                 </div>
-
-
             </div>
-        </div>
-        <div class="comentario">
+        </article>
 
-            <img src=".\Imgs\comillas.png" alt="comillas" class="comentario-img">
-
-            <div class="texto">
-                <p>Excelente guía y prácticas recomendaciones. 
-                ¡De todo corazón! ¡Gracias Juanjo!
-                </p>
+        <!-- Tarjeta 3 -->
+        <article class="testimonio-tarjeta">
+            <img src="./Imgs/comillas.png" alt="comillas" class="testimonio-comilla">
+            <div class="testimonio-cuerpo">
+                <p>Excelente guía y prácticas recomendaciones. ¡De todo corazón! ¡Gracias Juanjo!</p>
             </div>
-
-
-            <div class="nombre-comentario">
-
-
-                <img src=".\Imgs\profilePic.jpg" alt="img" class="img-comentario">
-                <div>
-                    <h1>FRANCISCO DELGADO</h1>
-                    <pre>Participante del taller</pre>
+            <div class="testimonio-usuario">
+                <img src="./Imgs/profilePic.jpg" alt="Francisco Delgado" class="usuario-foto">
+                <div class="usuario-datos">
+                    <h4>FRANCISCO DELGADO</h4>
+                    <span>Participante del taller</span>
                 </div>
-
-
             </div>
-        </div>
+        </article>
 
-
-    </section>
+    </div>
+</section>
     <section class="client-section">
         <h2>Ya Confían en Mí:</h2>
         <div class="client-logos">
