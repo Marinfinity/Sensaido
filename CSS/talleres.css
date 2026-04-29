@@ -22,7 +22,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -576,7 +576,7 @@
 /*COMENTARIOS*/
 .testimonios-seccion {
     padding: 80px 5%;
-    background-color: #f9fbf6; /* Fondo sutil para diferenciar secciones */
+    background-color: #f9fbf6; 
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -604,7 +604,7 @@
 .testimonios-separador {
     width: 80px;
     height: 4px;
-    background-color: #c0a060; /* Dorado para consistencia */
+    background-color: #c0a060;
     border: none;
     margin: 20px auto;
 }
@@ -636,7 +636,7 @@
     padding: 40px 30px;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border-left: 5px solid #0B4141; /* El verde de tu marca */
+    border-left: 5px solid #0B4141;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -676,7 +676,7 @@
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #c0a060; /* Aro dorado */
+    border: 2px solid #c0a060;
 }
 
 .usuario-datos h4 {
